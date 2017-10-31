@@ -11,19 +11,14 @@ public class commonUtils {
 	public static void checkExecution(String testSuiteName, String testCaseName,
 										String dataRunMode, ExcelReader excel) throws InvalidFormatException, IOException{
 		
-		System.out.println("in checkExecution, testSuiteName = "+testSuiteName
-								+" testCaseName = "+testCaseName
-								+" dataRunMode = "+dataRunMode);
+		
 		if(!isSuiteExecutable(testSuiteName)){
-			System.out.println("In testSuiteName if clause of CheckPoint "+isSuiteExecutable(testSuiteName));
 			throw new SkipException("Skipping the Test "+testCaseName+" as RunMode of suite "+testSuiteName+" is No");
 		}
 		if(!isTestExecutable(testCaseName,excel)){
-			System.out.println("In testCaseName if clause of CheckPoint "+isTestExecutable(testCaseName,excel));
 			throw new SkipException("Skipping the Test "+testCaseName+" as RunMode of testCase  "+testCaseName+" is No");
 		}
 		if(dataRunMode.equalsIgnoreCase(constants.RUNMODE_NO)){
-			System.out.println("RunMode in if clause of CheckPoint "+constants.RUNMODE_NO);
 			throw new SkipException("Skipping the Test "+testCaseName+" as RunMode of dataRunMode is No");
 		}
 	}
