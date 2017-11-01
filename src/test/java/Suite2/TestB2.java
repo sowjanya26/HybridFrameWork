@@ -20,6 +20,7 @@ public class TestB2 {
 		System.out.println("Executed testcase "+this.getClass().getSimpleName()+" with data ---- Iteration :"+data.get("Iteration")
 							+ " TestData :"+data.get("TestData")+" Browser :"+data.get("Browser")
 							+ " RunMode :"+data.get("RunMode"));
+		System.out.println("Test case "+this.getClass().getSimpleName()+" executed successfully.");
 		
 	}
 }
