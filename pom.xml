@@ -3,8 +3,14 @@
   <groupId>com.automation</groupId>
   <artifactId>HybridFrameWork</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
+
   <dependencies>
+  <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+	<dependency>
+	    <groupId>org.apache.maven.plugins</groupId>
+	    <artifactId>maven-compiler-plugin</artifactId>
+	    <version>3.5</version>
+	</dependency>
    <dependency>
         <groupId>org.seleniumhq.selenium</groupId>
         <artifactId>selenium-java</artifactId>
@@ -58,8 +64,8 @@
 	    <artifactId>dom4j</artifactId>
 	    <version>1.6.1</version>
 	</dependency>
-	
-    
+	   
   
   </dependencies>
+  
 </project>
